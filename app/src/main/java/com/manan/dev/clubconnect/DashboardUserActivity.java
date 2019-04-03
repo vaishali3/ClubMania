@@ -102,7 +102,6 @@ public class DashboardUserActivity extends AppCompatActivity
         curEvents = new SectionDataModel();
         curEvents.setHeaderTitle("Future Events");
         curEventsItem = new ArrayList<>();
-
         privateEvents = new SectionDataModel();
         privateEvents.setHeaderTitle("Private Events");
         privateEventItem = new ArrayList<>();
