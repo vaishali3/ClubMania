@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/details"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="4"
+            android:scaleType="fitCenter"
+            android:src="@drawable/front_cover" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/logo"-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/heading"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="13dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/name_logo" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:paddingBottom="22dp"
+        android:text="Event Details in the Campus! Now get all the information related to events on a single platform!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view_b"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/view_b"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/to_admin_zone"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/to_admin_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="Are you an Admin? Tap Here!"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.manan.dev.clubconnect.DashboardUserActivity"
+    tools:showIn="@layout/app_bar_dashboard_user">
+
+    <TextView
+        android:id="@+id/tvFaltu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="Clubs"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_clubs_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFaltu"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp">
+
+            <TextView
+                android:id="@+id/manan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Manan"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/vividha"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Vividha"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/ananya"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Ananya"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/jhalak"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Jhalak"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/samarpan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Samarpan"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/srijan"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Srijan"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/nataraja"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Nataraja"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/microbird"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Microbird"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/mechnext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="MechNext"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/taranum"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_club"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Taranum"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hsv_clubs_name"
+        android:scrollbars="none" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

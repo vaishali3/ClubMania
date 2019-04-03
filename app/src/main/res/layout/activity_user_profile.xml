@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manan.dev.clubconnect.user.UserProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/photo_crop_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/user_profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:hint="Phone No." />
+
+            <EditText
+                android:id="@+id/et_RollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true"
+                android:hint="Roll Number" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="Email Id" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                style="@style/AppTheme.User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:tag="Year" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_weight="1"
+                style="@style/AppTheme.User"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:tag="Year" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                style="@style/AppTheme.User"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:tag="Year" />
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select the Club"
+                    android:textSize="18dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:id="@+id/club_radiogrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Manan"
+                    android:text="Manan">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Srijan" android:text="Srijan">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Ananya" android:text="Ananya">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:id="@+id/Vividha" android:text="Vividha">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Microbird" android:text="Microbird">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Jhalak" android:text="Jhalak">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Samarpan" android:text="Samarpan">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Natraja" android:text="Natraja">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Mechnext" android:text="Mechnext">
+                </CheckBox>
+                <CheckBox android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tarannum" android:text="Tarannum">
+                </CheckBox>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/submit_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:src="@drawable/check" />
+
+
+</RelativeLayout>
