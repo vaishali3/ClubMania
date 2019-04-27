@@ -14,19 +14,11 @@ public class DevelopersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_developers);
-       ImageView kushank = (ImageView) findViewById(R.id.img_kushank);
-        ImageView yatin = (ImageView) findViewById(R.id.yatin);
-        ImageView shubham = (ImageView) findViewById(R.id.sharma);
-        ImageView kachroo = (ImageView) findViewById(R.id.kachroo);
-        ImageView naman = (ImageView) findViewById(R.id.naman);
+       ImageView archana = (ImageView) findViewById(R.id.img_archana);
+        ImageView prerna = (ImageView) findViewById(R.id.img_prerna);
 
-        Picasso.with(DevelopersActivity.this).load("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAwUAAAAJDIzY2I4Nzk2LWQyZjUtNDI2MC05NjlhLWMyMmNlMGYwZTg2Nw.jpg").transform(new CircleTransform()).into(kushank);
-        Picasso.with(DevelopersActivity.this).load("https://media.licdn.com/mpr/mpr/AAIAAQDGAAAAAQAAAAAAAAnYAAAAJDAzMTUyY2Q4LTEwYjAtNDNlMi05ODFjLTI1MzZmYjIyNDczMg.jpg").transform(new CircleTransform()).into(yatin);
-        Picasso.with(DevelopersActivity.this).load("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAAuBAAAAJGFlOTMyMTVjLTBlZTQtNGNlZi05YjE1LTdlYzc1NTZkNzgzYw.jpg").transform(new CircleTransform()).into(shubham);
-        Picasso.with(DevelopersActivity.this).load("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAArdAAAAJGYxNjJmNjlkLWEwYTAtNDI5Zi1iYzE4LWMyNjQyYWVhM2ZjOQ.jpg").transform(new CircleTransform()).into(kachroo);
-        Picasso.with(DevelopersActivity.this).load("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAsZAAAAJDczNWQ0Zjc1LTRkZDMtNDQxNi1hNGVkLWI1Y2ZlYzRhOGNhZA.jpg").transform(new CircleTransform()).into(naman);
-
-
+        Picasso.with(DevelopersActivity.this).load("https://i.ibb.co/phmrt79/91-95551-04435-20180808-160918.jpg").transform(new CircleTransform()).into(archana);
+        Picasso.with(DevelopersActivity.this).load("https://i.ibb.co/2q1RWsQ/Whats-App-Image-2019-04-04-at-8-33-41-PM.jpg").transform(new CircleTransform()).into(prerna);
 
     }
 }

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 //        TransitionDrawable trans = (TransitionDrawable) containeer.getBackground();
 //        trans.startTransition(8000);
 
-        //setTheme(android.R.style.Theme_Black_NoTitleBar_Fullscreen);
+        setTheme(android.R.style.Theme_Black_NoTitleBar_Fullscreen);
 
         if (getIntent().getBooleanExtra("EXIT", false)) {
             finish();
@@ -157,6 +157,9 @@ public class MainActivity extends AppCompatActivity {
             //finish();
         } else if (currentUser != null) {
             //Toast.makeText(MainActivity.this, "Switching to Dashboard!", Toast.LENGTH_SHORT).show();
+           if(currentUser.getDisplayName().toString().equals("dsw"))
+               startActivity(new Intent(MainActivity.this,DswActivity.class));
+           else
             startActivity(new Intent(MainActivity.this, AdminDashboardActivity.class));
             //finish();
         }

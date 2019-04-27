@@ -138,7 +138,7 @@ public class DashboardUserActivity extends AppCompatActivity
             //Toast.makeText(DashboardUserActivity.this,urll,Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             Log.d("imageurl", e.toString());
-            Toast.makeText(DashboardUserActivity.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(DashboardUserActivity.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
         }
 
 
@@ -389,7 +389,7 @@ public class DashboardUserActivity extends AppCompatActivity
                 eventListForRecyclerView.add(privateEvents);
             }
 
-            Toast.makeText(DashboardUserActivity.this, Integer.toString(curEventsItem.size()) + " " + Integer.toString(preEventsItem.size()) + " " + Integer.toString(privateEventItem.size()), Toast.LENGTH_SHORT).show();
+    //        Toast.makeText(DashboardUserActivity.this, Integer.toString(curEventsItem.size()) + " " + Integer.toString(preEventsItem.size()) + " " + Integer.toString(privateEventItem.size()), Toast.LENGTH_SHORT).show();
 
             adapter.notifyDataSetChanged();
         } catch (Exception e) {

@@ -69,6 +69,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+import static android.app.Activity.RESULT_OK;
 import static java.lang.Math.min;
 import static java.util.Collections.sort;
 
@@ -716,10 +717,10 @@ public class EditEventActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.save_event:
-                if (isOnline)
+             //   if (isOnline)
                     uploadEvent();
-                else
-                    Toast.makeText(this, "Sorry! You are offline!", Toast.LENGTH_SHORT).show();
+               // else
+                 //   Toast.makeText(this, "Sorry! You are offline!", Toast.LENGTH_SHORT).show();
                 return true;
             case android.R.id.home:
                 onBackPressed();

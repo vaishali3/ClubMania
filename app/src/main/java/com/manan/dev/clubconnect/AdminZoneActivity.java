@@ -157,7 +157,6 @@ public class AdminZoneActivity extends AppCompatActivity {
                     }
                 }
             });
-
         } catch (Exception e) {
             pd.hide();
             e.printStackTrace();

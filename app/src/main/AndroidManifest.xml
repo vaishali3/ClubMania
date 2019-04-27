@@ -14,9 +14,9 @@
         android:allowBackup="true"
         android:icon="@drawable/temp_logo"
         android:label="Club Mania"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:largeHeap="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -54,8 +54,8 @@
             android:label="Admin Dashboard" />
         <activity
             android:name=".AdminZoneActivity"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
-            android:theme="@style/CodeFont" />
+            android:theme="@style/CodeFont"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
         <activity android:name=".user.UserClubEventListActivity" />
         <activity
             android:name=".DashboardUserActivity"
@@ -115,7 +115,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ClubMembersAdmin" />
-        <activity android:name=".editEvent.EventAttendees"></activity>
+        <activity android:name=".editEvent.EventAttendees" />
+        <activity android:name=".DswActivity"></activity>
     </application>
 
 </manifest>
