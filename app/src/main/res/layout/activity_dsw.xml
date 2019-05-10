@@ -8,9 +8,10 @@
     tools:context=".DswActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_admin_club_list"
+        android:id="@+id/rv_notifications"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"/>
 
 
     <com.manan.dev.clubconnect.MovableFloatingActionButton

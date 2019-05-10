@@ -23,12 +23,15 @@ import android.widget.Toast;
 import com.facebook.login.LoginManager;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.github.javiersantos.materialstyleddialogs.enums.Style;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.manan.dev.clubconnect.Adapters.RecyclerViewDataAdapter;
 import com.manan.dev.clubconnect.Models.Event;
 import com.manan.dev.clubconnect.Models.Photos;
@@ -92,6 +95,8 @@ public class DashboardUserActivity extends AppCompatActivity
         eventListForRecyclerView = new ArrayList<SectionDataModel>();
         mAuth = FirebaseAuth.getInstance();
         //createDummyData();
+
+
         event = new Event();
         eventsMap = new HashMap<>();
         preEvents = new SectionDataModel();
@@ -125,6 +130,16 @@ public class DashboardUserActivity extends AppCompatActivity
 
         setClickListeners();
 
+        FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener( new OnSuccessListener<InstanceIdResult>() {
+            @Override
+            public void onSuccess(InstanceIdResult instanceIdResult) {
+                String deviceToken = instanceIdResult.getToken();
+                Log.d("prerna",deviceToken);
+                // Do whatever you want with your token now
+                // i.e. store it on SharedPreferences or DB
+                // or directly send it to server
+            }
+        });
         try {
             Picasso.with(DashboardUserActivity.this)
                     .load(mAuth.getCurrentUser()
